@@ -5,6 +5,13 @@
 - [提取固件](#01-dump-rom)
 - [root](#02-root)
 
+## 许可和免责声明
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+
+本人不为按照此文档所述步骤操作所导致的任何后果承担任何责任。
+
+如你继续阅读，则代表你理解、认可并接受此免责声明。
 
 <a name="00-unlock-bootloader"/>
 
@@ -82,4 +89,6 @@ Length:         3917479936
 ## root
 
 这个就很简单了，把 EMMC 镜像里的 boot 分区提取出来，让 Magisk Manager 去 patch 一下 boot image，再 fastboot flash boot 就好了。
+
+这里提供一份 patch 过的 boot 镜像，[点此下载](https://github.com/ReimuNotMoe/Philips-E289-Hack/blob/master/patched_boot.img)，可以直接刷。
 
